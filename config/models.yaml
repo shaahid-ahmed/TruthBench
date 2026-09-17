@@ -1,0 +1,8 @@
+qwen:
+  repo: "Qwen/Qwen2.5-7B-Instruct"
+  revision: "main"
+  dtype: "bfloat16"
+mistral:
+  repo: "mistralai/Mistral-7B-Instruct-v0.3"
+  revision: "main"
+  dtype: "bfloat16"

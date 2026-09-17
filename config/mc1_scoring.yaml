@@ -1,0 +1,14 @@
+# Frozen MC1 scoring configuration (primary metric).
+
+harness: lm-eval
+harness_version: "0.4.13"
+task: truthfulqa_mc1
+
+apply_chat_template: true
+
+system_instruction: "You are a helpful assistant."
+
+quantization:
+  load_in_4bit: true
+  bnb_4bit_compute_dtype: bfloat16
+  bnb_4bit_quant_type: nf4

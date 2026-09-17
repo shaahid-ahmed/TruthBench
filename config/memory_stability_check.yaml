@@ -1,0 +1,35 @@
+model: qwen
+n_cycles: 6
+startup_baseline_gb: 7.04
+cycles:
+- cycle: 1
+  before_gb: 7.04
+  after_load_gb: 6.95
+  after_gen_gb: 11.28
+  after_unload_gb: 9.26
+- cycle: 2
+  before_gb: 9.26
+  after_load_gb: 6.97
+  after_gen_gb: 11.25
+  after_unload_gb: 9.23
+- cycle: 3
+  before_gb: 9.23
+  after_load_gb: 6.98
+  after_gen_gb: 11.26
+  after_unload_gb: 10.7
+- cycle: 4
+  before_gb: 10.7
+  after_load_gb: 6.83
+  after_gen_gb: 11.37
+  after_unload_gb: 11.5
+- cycle: 5
+  before_gb: 11.5
+  after_load_gb: 6.85
+  after_gen_gb: 11.37
+  after_unload_gb: 9.36
+- cycle: 6
+  before_gb: 9.36
+  after_load_gb: 6.93
+  after_gen_gb: 11.22
+  after_unload_gb: 9.27
+drift_gb: 0.01

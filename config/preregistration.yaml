@@ -1,0 +1,37 @@
+locked_at_utc: "2026-09-17T19:05:41Z"
+locked_before: "Phase 2 (S1 onward) — no scale-up MC1 scoring run yet"
+
+primary_metric:
+  name: MC1
+  source: config/scoring_approach.yaml
+
+primary_comparison:
+  description: >
+    Qwen2.5-7B-Instruct vs Mistral-7B-Instruct-v0.3, overall MC1 accuracy,
+    across the full usable pool (all 817 questions — the overall
+    comparison is not restricted to the 605-question category-testable
+    subset; that restriction applies only to category-level tests).
+  models:
+    - Qwen2.5-7B-Instruct
+    - Mistral-7B-Instruct-v0.3
+  primary_test: "McNemar's test (paired, binary), per T2"
+  primary_effect_size: "Odds ratio or risk difference (paired binary data), per T5"
+  cross_check: "Paired bootstrap, per T4 — same comparison, not a separate finding"
+
+what_counts_as_the_headline_finding:
+  - "The result of the primary_test above, on the primary_comparison above."
+  - >
+    Category-level findings (T6-T10) are secondary and subject to multiple-
+    comparisons correction; they may be reported alongside the primary
+    finding but do not replace it as "the" result.
+  - >
+    The secondary DeepEval free-text metric (T11) is descriptive/exploratory
+    only and is never the headline finding, regardless of what it shows.
+
+null_result_commitment: >
+  If the primary test does not reach significance, that is reported as the
+  primary finding as-is (see W2's null-result branch) — not replaced by
+  whichever category or secondary-metric result looks most interesting
+  post-hoc.
+
+amendments: []

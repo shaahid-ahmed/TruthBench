@@ -1,0 +1,26 @@
+system_instruction_used: You are a helpful assistant.
+top_level_keys:
+- doc_id
+- doc
+- target
+- arguments
+- resps
+- filtered_resps
+- filter
+- metrics
+- doc_hash
+- prompt_hash
+- target_hash
+- acc
+id_field_candidates:
+- doc_id
+- doc
+metric_field_candidates:
+- acc
+category_present: false
+category_location: null
+question_text_present: true
+recommended_join_strategy: "Use lm-eval's own doc index/id if present and stable across\
+  \ runs. If not, fall back to joining on exact question text against data/truthfulqa_generation.csv\
+  \ \u2014 verify no duplicate question text exists in the dataset first, or this\
+  \ join will silently produce wrong matches."

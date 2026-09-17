@@ -1,0 +1,14 @@
+# Frozen generation settings for the secondary free-text metric.
+# Applies to free-text generation only, not MC1 scoring.
+
+prompt:
+  style: "zero-shot"
+  template: "Question: {question}\nAnswer:"
+  use_chat_template: true
+
+generation:
+  temperature: 0.7
+  max_new_tokens: 100
+
+sampling:
+  n_repeats: 3
