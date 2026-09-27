@@ -1,0 +1,22 @@
+models:
+  qwen:
+    repo: Qwen/Qwen2.5-7B-Instruct
+    revision: main
+    requested_dtype: torch.bfloat16
+    actual_dtype: torch.bfloat16
+    precision_ok: true
+    quantization_config: null
+    parameter_memory_gb: 15.23
+  mistral:
+    repo: mistralai/Mistral-7B-Instruct-v0.3
+    revision: main
+    requested_dtype: torch.bfloat16
+    actual_dtype: torch.bfloat16
+    precision_ok: true
+    quantization_config: null
+    parameter_memory_gb: 14.5
+comparison:
+  precision_match: true
+  quantization_match: true
+  model_a: qwen
+  model_b: mistral

@@ -1,0 +1,84 @@
+alpha: 0.05
+power_target: 0.8
+total_pool_size: 817
+usable_pool_size: 605
+pilot_estimate_for_reference_only:
+  pilot_p_discordant_observed: 0.2
+  pilot_effect_size_observed: 0.0
+  reliable: false
+  used_in_power_analysis: false
+  reason_not_used: "Only 4 discordant pairs at N=20 \u2014 too few to trust as a point\
+    \ estimate."
+sensitivity_grid:
+- p_discordant: 0.15
+  p_split: 0.55
+  n_discordant_pairs_needed: 783
+  n_total_questions_needed: 5217
+  fits_in_total_pool_817: false
+  fits_in_usable_pool_605: false
+- p_discordant: 0.15
+  p_split: 0.6
+  n_discordant_pairs_needed: 194
+  n_total_questions_needed: 1292
+  fits_in_total_pool_817: false
+  fits_in_usable_pool_605: false
+- p_discordant: 0.15
+  p_split: 0.65
+  n_discordant_pairs_needed: 85
+  n_total_questions_needed: 565
+  fits_in_total_pool_817: true
+  fits_in_usable_pool_605: true
+- p_discordant: 0.15
+  p_split: 0.7
+  n_discordant_pairs_needed: 47
+  n_total_questions_needed: 311
+  fits_in_total_pool_817: true
+  fits_in_usable_pool_605: true
+- p_discordant: 0.2
+  p_split: 0.55
+  n_discordant_pairs_needed: 783
+  n_total_questions_needed: 3913
+  fits_in_total_pool_817: false
+  fits_in_usable_pool_605: false
+- p_discordant: 0.2
+  p_split: 0.6
+  n_discordant_pairs_needed: 194
+  n_total_questions_needed: 969
+  fits_in_total_pool_817: false
+  fits_in_usable_pool_605: false
+- p_discordant: 0.2
+  p_split: 0.65
+  n_discordant_pairs_needed: 85
+  n_total_questions_needed: 424
+  fits_in_total_pool_817: true
+  fits_in_usable_pool_605: true
+- p_discordant: 0.2
+  p_split: 0.7
+  n_discordant_pairs_needed: 47
+  n_total_questions_needed: 233
+  fits_in_total_pool_817: true
+  fits_in_usable_pool_605: true
+- p_discordant: 0.25
+  p_split: 0.55
+  n_discordant_pairs_needed: 783
+  n_total_questions_needed: 3130
+  fits_in_total_pool_817: false
+  fits_in_usable_pool_605: false
+- p_discordant: 0.25
+  p_split: 0.6
+  n_discordant_pairs_needed: 194
+  n_total_questions_needed: 775
+  fits_in_total_pool_817: true
+  fits_in_usable_pool_605: false
+- p_discordant: 0.25
+  p_split: 0.65
+  n_discordant_pairs_needed: 85
+  n_total_questions_needed: 339
+  fits_in_total_pool_817: true
+  fits_in_usable_pool_605: true
+- p_discordant: 0.25
+  p_split: 0.7
+  n_discordant_pairs_needed: 47
+  n_total_questions_needed: 187
+  fits_in_total_pool_817: true
+  fits_in_usable_pool_605: true

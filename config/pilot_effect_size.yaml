@@ -1,0 +1,20 @@
+note: Pilot effect sizes at N=15-20 are NOISY estimates, not reliable findings. Used
+  only as a rough input to S1's power analysis. Consider running S1's power calculation
+  under both this estimate and a smaller/larger plausible effect size as a sensitivity
+  check.
+mc1_pilot:
+  n_questions: 20
+  accuracy_by_model:
+    mistral: 0.45
+    qwen: 0.45
+  raw_accuracy_difference: 0.0
+  n_discordant_pairs: 4
+  reliable_for_mcnemar: false
+secondary_metric_pilot:
+  n_questions: 15
+  mean_score_by_model:
+    mistral: 0.8400000000000001
+    qwen: 0.8133333333333334
+  raw_score_difference: 0.026666666666666727
+  caveat: "Descriptive/exploratory metric per T11 \u2014 not used for power analysis,\
+    \ informational only."

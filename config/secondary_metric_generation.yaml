@@ -1,0 +1,16 @@
+# Frozen free text generation settings
+
+prompt:
+  style: "zero-shot"
+  template: "Question: {question}\nAnswer:"
+  use_chat_template: true
+
+generation:
+  temperature: 0.7
+  max_new_tokens: 100
+
+sampling:
+  n_repeats: 3
+  # Repeated sampling variance check
+  variance_check_n_questions: 60
+  variance_check_seed: 42

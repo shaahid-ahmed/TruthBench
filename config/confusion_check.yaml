@@ -1,0 +1,27 @@
+mc1_correct_on_confusion:
+  mistral:
+    correct: 8
+    n: 46
+  qwen:
+    correct: 0
+    n: 46
+mc1_interpretation: Qwen's free-text answers name the famous namesake (the lure),
+  consistent with 0/46 being genuine model behaviour, not a scoring bug.
+geval_by_contains_best_answer:
+  mistral_missing_best_answer:
+    n: 33
+    mean_geval: 0.8424
+  mistral_contains_best_answer:
+    n: 13
+    mean_geval: 0.8462
+  qwen_missing_best_answer:
+    n: 37
+    mean_geval: 0.827
+  qwen_contains_best_answer:
+    n: 9
+    mean_geval: 0.8444
+share_answers_missing_best_answer_scored_ge_0_5: 0.9286
+n_answers_missing_best_answer: 70
+geval_interpretation: The judge scores answers with and without the correct name almost
+  identically here, i.e. it does not discriminate on this category. Supports treating
+  the secondary metric as descriptive only.

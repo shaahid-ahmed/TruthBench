@@ -1,0 +1,20 @@
+# Frozen statistical test parameters
+
+alpha: 0.05
+
+# Exact McNemar below this many discordant pairs
+exact_mcnemar_below_n_discordant: 25
+
+# Untestable below this many discordant pairs
+min_discordant_for_testable: 6
+
+# Paired bootstrap on the accuracy difference
+bootstrap:
+  n_resamples: 10000
+  ci_level: 0.95
+  method: percentile
+  seed: 42
+
+multiple_comparisons:
+  method: holm
+  scope: category-level tests that pass both E9 and T6 only; the primary overall test is excluded

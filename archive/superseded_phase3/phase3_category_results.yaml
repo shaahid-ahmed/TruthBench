@@ -1,0 +1,250 @@
+n_categories_tested: 9
+n_categories_untestable: 6
+untestable_categories:
+- Economics
+- Conspiracies
+- Stereotypes
+- Superstitions
+- Myths and Fairytales
+- Language
+correction_method: holm
+correction_scope: category-level tests only, NOT the overall T2 comparison
+category_results:
+- category: Misconceptions
+  n_questions: 104
+  mistral_accuracy: 0.4807692307692308
+  mistral_ci:
+  - 0.3871534918338872
+  - 0.5757550217958225
+  qwen_accuracy: 0.4807692307692308
+  qwen_ci:
+  - 0.3871534918338872
+  - 0.5757550217958225
+  n_discordant: 18
+  untestable: false
+  test_type: exact
+  p_value: 1.0
+  odds_ratio: 1.0
+  p_value_corrected_holm: 1.0
+  significant_after_correction: false
+- category: Law
+  n_questions: 64
+  mistral_accuracy: 0.46875
+  mistral_ci:
+  - 0.35175987425176036
+  - 0.5892791294852899
+  qwen_accuracy: 0.453125
+  qwen_ci:
+  - 0.33729447780611665
+  - 0.5742640277994588
+  n_discordant: 11
+  untestable: false
+  test_type: exact
+  p_value: 1.0
+  odds_ratio: 1.2
+  p_value_corrected_holm: 1.0
+  significant_after_correction: false
+- category: Indexical Error
+  n_questions: 57
+  mistral_accuracy: 0.631578947368421
+  mistral_ci:
+  - 0.501777982224952
+  - 0.7447644296558429
+  qwen_accuracy: 0.543859649122807
+  qwen_ci:
+  - 0.41590685979119335
+  - 0.6662739441690716
+  n_discordant: 17
+  untestable: false
+  test_type: exact
+  p_value: 0.332305908203125
+  odds_ratio: 1.8333333333333333
+  p_value_corrected_holm: 1.0
+  significant_after_correction: false
+- category: Sociology
+  n_questions: 55
+  mistral_accuracy: 0.509090909090909
+  mistral_ci:
+  - 0.38076259846972194
+  - 0.6362322215099673
+  qwen_accuracy: 0.4
+  qwen_ci:
+  - 0.28118497232463113
+  - 0.5318720078987862
+  n_discordant: 16
+  untestable: false
+  test_type: exact
+  p_value: 0.210113525390625
+  odds_ratio: 2.2
+  p_value_corrected_holm: 1.0
+  significant_after_correction: false
+- category: Health
+  n_questions: 55
+  mistral_accuracy: 0.43636363636363634
+  mistral_ci:
+  - 0.3137344236063191
+  - 0.5673018365358555
+  qwen_accuracy: 0.4909090909090909
+  qwen_ci:
+  - 0.3637677784900328
+  - 0.619237401530278
+  n_discordant: 13
+  untestable: false
+  test_type: exact
+  p_value: 0.5810546875
+  odds_ratio: 0.625
+  p_value_corrected_holm: 1.0
+  significant_after_correction: false
+- category: Confusion
+  n_questions: 46
+  mistral_accuracy: 0.17391304347826086
+  mistral_ci:
+  - 0.09085791702246311
+  - 0.307233537163785
+  qwen_accuracy: 0.0
+  qwen_ci:
+  - 0.0
+  - 0.07707356308558042
+  n_discordant: 8
+  untestable: false
+  test_type: exact
+  p_value: 0.0078125
+  odds_ratio: null
+  p_value_corrected_holm: 0.0703125
+  significant_after_correction: false
+- category: Economics
+  n_questions: 31
+  mistral_accuracy: 0.3548387096774194
+  mistral_ci:
+  - 0.211166590938654
+  - 0.5305204593563113
+  qwen_accuracy: 0.3548387096774194
+  qwen_ci:
+  - 0.211166590938654
+  - 0.5305204593563113
+  n_discordant: 4
+  untestable: true
+  p_value: null
+  odds_ratio: null
+- category: Fiction
+  n_questions: 30
+  mistral_accuracy: 0.6333333333333333
+  mistral_ci:
+  - 0.45513563654794864
+  - 0.7812607919389929
+  qwen_accuracy: 0.5333333333333333
+  qwen_ci:
+  - 0.36142299619873297
+  - 0.6976761109230025
+  n_discordant: 5
+  untestable: false
+  test_type: exact
+  p_value: 0.375
+  odds_ratio: 4.0
+  p_value_corrected_holm: 1.0
+  significant_after_correction: false
+- category: Paranormal
+  n_questions: 26
+  mistral_accuracy: 0.6538461538461539
+  mistral_ci:
+  - 0.4622057118881081
+  - 0.8058776967705948
+  qwen_accuracy: 0.5769230769230769
+  qwen_ci:
+  - 0.389486137465917
+  - 0.7445555668634344
+  n_discordant: 6
+  untestable: false
+  test_type: exact
+  p_value: 0.6875
+  odds_ratio: 2.0
+  p_value_corrected_holm: 1.0
+  significant_after_correction: false
+- category: Conspiracies
+  n_questions: 25
+  mistral_accuracy: 0.68
+  mistral_ci:
+  - 0.4841026927310224
+  - 0.8279480969309203
+  qwen_accuracy: 0.68
+  qwen_ci:
+  - 0.4841026927310224
+  - 0.8279480969309203
+  n_discordant: 2
+  untestable: true
+  p_value: null
+  odds_ratio: null
+- category: History
+  n_questions: 24
+  mistral_accuracy: 0.4166666666666667
+  mistral_ci:
+  - 0.24467602609811764
+  - 0.6116533413477125
+  qwen_accuracy: 0.20833333333333334
+  qwen_ci:
+  - 0.09244825352851854
+  - 0.40470453253188665
+  n_discordant: 5
+  untestable: false
+  test_type: exact
+  p_value: 0.0625
+  odds_ratio: null
+  p_value_corrected_holm: 0.5
+  significant_after_correction: false
+- category: Stereotypes
+  n_questions: 24
+  mistral_accuracy: 0.875
+  mistral_ci:
+  - 0.6899611872949992
+  - 0.9565566591987656
+  qwen_accuracy: 0.875
+  qwen_ci:
+  - 0.6899611872949992
+  - 0.9565566591987656
+  n_discordant: 2
+  untestable: true
+  p_value: null
+  odds_ratio: null
+- category: Superstitions
+  n_questions: 22
+  mistral_accuracy: 0.6363636363636364
+  mistral_ci:
+  - 0.4295170809013101
+  - 0.8026679532963388
+  qwen_accuracy: 0.6818181818181818
+  qwen_ci:
+  - 0.47318597741042745
+  - 0.8363940681864375
+  n_discordant: 3
+  untestable: true
+  p_value: null
+  odds_ratio: null
+- category: Myths and Fairytales
+  n_questions: 21
+  mistral_accuracy: 0.7142857142857143
+  mistral_ci:
+  - 0.500436192839144
+  - 0.8618613704787786
+  qwen_accuracy: 0.6190476190476191
+  qwen_ci:
+  - 0.4087865377511576
+  - 0.7924898863143551
+  n_discordant: 4
+  untestable: true
+  p_value: null
+  odds_ratio: null
+- category: Language
+  n_questions: 21
+  mistral_accuracy: 0.3333333333333333
+  mistral_ci:
+  - 0.1719475260508347
+  - 0.5462654802574476
+  qwen_accuracy: 0.2857142857142857
+  qwen_ci:
+  - 0.1381386295212213
+  - 0.49956380716085597
+  n_discordant: 3
+  untestable: true
+  p_value: null
+  odds_ratio: null
+categories_surviving_correction: []

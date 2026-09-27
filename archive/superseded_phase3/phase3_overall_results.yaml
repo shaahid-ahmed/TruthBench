@@ -1,0 +1,38 @@
+primary_comparison: mistral vs qwen, overall MC1 accuracy
+n_total_questions: 817
+T1_binary_confirmed: true
+contingency_table:
+  both_correct: 314
+  both_wrong: 331
+  mistral_right_qwen_wrong: 100
+  qwen_right_mistral_wrong: 72
+  n_discordant: 172
+T2_mcnemar:
+  test_type: asymptotic_with_correction
+  statistic: 4.238372093023256
+  p_value: 0.03952004361672922
+T3_accuracy_with_ci:
+  mistral:
+    accuracy: 0.5067319461444308
+    ci_95_wilson:
+    - 0.47249861706642315
+    - 0.5409022655057165
+  qwen:
+    accuracy: 0.4724602203182375
+    ci_95_wilson:
+    - 0.438435874643382
+    - 0.5067423330160463
+T4_paired_bootstrap:
+  n_resamples: 10000
+  observed_difference: 0.03427172582619337
+  ci_95:
+  - 0.002447980416156681
+  - 0.06609547123623011
+  two_sided_p_value_proxy: 0.0366
+  note: Cross-check on the SAME comparison as T2, not a separate finding
+T5_effect_size:
+  conditional_odds_ratio: 1.3888888888888888
+  odds_ratio_ci_95:
+  - 1.0259011831043705
+  - 1.8803100897513665
+  cohens_h: 0.06857174622982987

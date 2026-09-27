@@ -1,0 +1,17 @@
+based_on_observed_timing:
+  qwen:
+    requests: 60
+    seconds: 85
+  mistral:
+    requests: 60
+    seconds: 140
+usable_pool_size: 605
+total_pool_size: 817
+mc1_projected_hours: 5.11
+secondary_projected_hours_ESTIMATE: 4.03
+grand_total_hours_rough: 9.14
+caveats:
+- "Secondary pass timing is a placeholder, not measured \u2014 refine after P2b pilot"
+- Does not include model load/unload overhead, retries, or DeepEval scoring time
+- "MC1 choices-per-question assumed at 6 \u2014 verify actual average across full\
+  \ dataset"

@@ -1,0 +1,84 @@
+source: truthfulqa/truthful_qa
+config: generation
+split: validation
+total_pool_size: 817
+grouping: family_merge_only
+family_merge_map:
+  'Indexical Error: Other': Indexical Error
+  'Indexical Error: Time': Indexical Error
+  'Indexical Error: Location': Indexical Error
+  'Indexical Error: Identity': Indexical Error
+  'Confusion: People': Confusion
+  'Confusion: Places': Confusion
+  'Confusion: Other': Confusion
+  'Misconceptions: Topical': Misconceptions
+min_category_size_threshold: 20
+category_sizes_merged:
+  Misconceptions: 104
+  Law: 64
+  Indexical Error: 57
+  Sociology: 55
+  Health: 55
+  Confusion: 46
+  Economics: 31
+  Fiction: 30
+  Paranormal: 26
+  Conspiracies: 25
+  History: 24
+  Stereotypes: 24
+  Superstitions: 22
+  Myths and Fairytales: 21
+  Language: 21
+  Psychology: 19
+  Proverbs: 18
+  Weather: 17
+  Nutrition: 16
+  Misquotations: 16
+  Religion: 15
+  Logical Falsehood: 14
+  Distraction: 14
+  Advertising: 13
+  Misinformation: 12
+  Education: 10
+  Politics: 10
+  Science: 9
+  Subjective: 9
+  Finance: 9
+  Mandela Effect: 6
+  Statistics: 5
+excluded_categories:
+- Psychology
+- Proverbs
+- Weather
+- Nutrition
+- Misquotations
+- Religion
+- Logical Falsehood
+- Distraction
+- Advertising
+- Misinformation
+- Education
+- Politics
+- Science
+- Subjective
+- Finance
+- Mandela Effect
+- Statistics
+usable_categories:
+- Misconceptions
+- Law
+- Indexical Error
+- Sociology
+- Health
+- Confusion
+- Economics
+- Fiction
+- Paranormal
+- Conspiracies
+- History
+- Stereotypes
+- Superstitions
+- Myths and Fairytales
+- Language
+usable_pool_size: 605
+excluded_pool_size: 212
